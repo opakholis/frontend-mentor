@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+  --font-head: 'Big Shoulders Display', cursive;
+  --font-body: 'Lexend Deca', sans-serif;
+
+  --orange: hsl(31, 77%, 52%);
+  --cyan: hsl(184, 100%, 22%);
+  --dark-cyan: hsl(179, 100%, 13%);
+
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --gray-light: hsl(0, 0%, 95%);
+}
+
+* {
+  box-sizing: border-box;
+  color: inherit;
+  font: inherit;
+}
+
+a {
+  color: var(--cyan);
+  text-decoration: none;
+}
+
+body {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: var(--font-body);
+  color: var(--transparent-white);
+  background-color: var(--gray-light);
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 18px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 380px;
+  padding: 36px;
+}
+
+.card h1 {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--gray-light);
+  margin: 36px 0 32px;
+}
+
+.card.card-1 {
+  background-color: var(--orange);
+  border-radius: 12px 12px 0 0;
+}
+
+.card.card-2 {
+  background-color: var(--cyan);
+}
+
+.card.card-3 {
+  background-color: var(--dark-cyan);
+  border-radius: 0 0 12px 12px;
+}
+
+.btn {
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--cyan);
+  background-color: var(--gray-light);
+  margin-top: 32px;
+  padding: 12px 24px;
+  border: 2px solid var(--gray-light);
+  border-radius: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--gray-light);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.attribution {
+  margin-top: 16px;
+  text-align: center;
+  color: var(--orange);
+}
+
+@media screen and (min-width: 860px) {
+  .cards {
+    flex-direction: row;
+  }
+
+  .card {
+    width: 300px;
+  }
+
+  .card.card-1 {
+    border-radius: 12px 0 0 12px;
+  }
+
+  .card.card-3 {
+    border-radius: 0 12px 12px 0;
+  }
+
+  .btn {
+    margin-top: 64px;
+  }
+}
