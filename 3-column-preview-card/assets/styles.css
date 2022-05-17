@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 
 :root {
-  --font-head: 'Big Shoulders Display', cursive;
-  --font-body: 'Lexend Deca', sans-serif;
+  --font-head: "Big Shoulders Display", cursive;
+  --font-body: "Lexend Deca", sans-serif;
 
   --orange: hsl(31, 77%, 52%);
   --cyan: hsl(184, 100%, 22%);
@@ -16,11 +16,6 @@
   box-sizing: border-box;
   color: inherit;
   font: inherit;
-}
-
-a {
-  color: var(--cyan);
-  text-decoration: none;
 }
 
 body {
@@ -98,12 +93,6 @@ body {
 
 .btn:focus {
   outline: none;
-}
-
-.attribution {
-  margin-top: 16px;
-  text-align: center;
-  color: var(--orange);
 }
 
 @media screen and (min-width: 860px) {
